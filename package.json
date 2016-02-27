@@ -1,0 +1,19 @@
+{
+  "name": "workshop-cms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tas12/workshop-cms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tas12/workshop-cms/issues"
+  },
+  "homepage": "https://github.com/tas12/workshop-cms#readme"
+}
