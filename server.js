@@ -17,9 +17,24 @@ function handler(req, res){
         res.end(file);
 
     });
+  } else {
+  var ext = endpoint.split(".")[1];
+
+  if (ext === "css" ) {
+    res.writeHead(200, {"Content-Type": "text/css"});
+  } else if (ext === "jpg") {
+    res.writeHead(200, {"Content-Type": "image/jpg"});
   }
 
-}
+  fs.readFile(__dirname + "/public" + endpoint, function(err, file){
+    if (err) {
+      console.log(err);
+
+  }
+
+res.end(file);
+});
+}}
 
 
 server.listen(port, function(){
